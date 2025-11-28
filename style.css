@@ -167,3 +167,73 @@
     font-size: 16px;
     opacity: 0.9;
 }
+/* =========================
+   BOOKING SECTION
+========================= */
+
+.booking-section {
+    background: #8cab4f; /* green background */
+    padding: 60px 0;
+}
+
+/* Calendar box */
+.calendar-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.calendar-img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 15px;
+}
+
+/* Note under calendar */
+.calendar-note {
+    background: #c8d69b;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Booking center box */
+.booking-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.booking-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.booking-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* Blue Button */
+.booking-btn {
+    background: #008cff;
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+
+.booking-btn:hover {
+    background: #006bd1;
+    color: #fff;
+}
+
