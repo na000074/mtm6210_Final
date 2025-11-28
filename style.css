@@ -264,13 +264,17 @@
 
 
 .footer-section {
-    background: #4e8b32;
-    color: white;
+    background: #497e34; /* darker green */
+}
+.footer-text {
+    color: #000000;
 }
 
+
 .footer-text {
-    font-size: 14px;
+    font-size: 19px;
     letter-spacing: 2px;
+    color: #ffffff;
 }
 
 .footer-icons a {
@@ -776,3 +780,4 @@
     color: #222;
 
 }
+
