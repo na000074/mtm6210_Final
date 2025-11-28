@@ -400,3 +400,382 @@
 @keyframes slideUp {
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* =========================
+   HORIZONTAL SCROLL GALLERY
+========================= */
+
+.scroll-gallery {
+    background: #2b2525;    
+    padding: 40px 0;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    padding: 20px 40px;
+    scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+
+.gallery-img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   FANCY LIGHT TITLE SECTION
+========================= */
+
+.group-title-section {
+    position: relative;
+    background: #f4f8e6; /* very light cream-green */
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+/* dotted pattern background */
+.pattern-layer {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(#d5dfbb 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* Heading text */
+.light-group-title {
+    position: relative;
+    z-index: 2;
+    font-size: 34px;
+    letter-spacing: 6px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* =========================
+   FADE-IN ANIMATION
+========================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInMove 1.2s ease forwards;
+}
+
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* =========================
+   DARK GREEN GROUP RESERVATION SECTION
+========================= */
+
+.group-reservation-section {
+    background: #8cab4f; 
+    padding: 70px 0;
+}
+
+/* Reservation text */
+.group-text {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+/* Buttons */
+.group-btn {
+    background: #8b1717;
+    color: #fff;
+    padding: 12px 32px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.group-btn:hover {
+    background: #a71d1d;
+    transform: scale(1.05);
+}
+
+/* Vertical Line */
+.vertical-line {
+    width: 2px;
+    height: 180px;
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+/* Important Info Box */
+.info-box {
+    background: #bfd497;
+    border: 2px solid #486024;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.info-title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.info-text {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Header background */
+.header-section {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.header-bg {
+    background-image: url('images/hbckg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.header-overlay {
+    background: rgba(0,0,0,0.25);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+/* Bootstrap-Friendly Curve Bar */
+.curve-bar {
+    width: 100%;
+    height: 20px;
+    background: #3f4e2a;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+/* Hanging line */
+.hanger-line {
+    width: 2px;
+    height: 60px;
+    background: #fff;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+/* Hanging image styling */
+.hanger-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+/* Animation (BEGINNER LEVEL) */
+.hanger {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* BEST PLATING SECTION */
+.best-plating-section {
+    background: #000; 
+    padding: 80px 0;
+}
+
+.best-title {
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+/* plating images */
+.plating-img {
+    width: 100%;
+    height: 120px; /* perfect size like screenshot */
+    object-fit: cover;
+    border-radius: 4px;
+    transform: rotate(-2deg);
+    transition: 0.3s ease;
+}
+
+.plating-img:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+/* OUR TEAM INTRO SECTION */
+.team-intro-section {
+    position: relative;
+    background: #f4f8e6; /* light green like figma */
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* dotted pattern */
+.team-intro-section .pattern-layer {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(#cbd9aa 1px, transparent 1px);
+    background-size: 22px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* content must be above dots */
+.team-intro-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.team-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.team-desc {
+    max-width: 850px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* TEAM GRID SECTION */
+.team-grid-section {
+    background: #7d9743; /* your green background */
+    padding: 80px 0;
+}
+
+/* image style */
+.team-photo {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* the cream info box */
+.team-info-box {
+    background: #f2f1df;
+    padding: 18px 20px;
+    border-radius: 8px;
+    margin-top: -20px; /* attach it to the image */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* text styling */
+.team-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+}
+
+.team-role {
+    font-size: 14px;
+    margin: 3px 0 0;
+    color: #555;
+}
+
+/* card wrapper */
+.team-card {
+    text-align: center;
+}
+/* Section background */
+.reviews-section {
+    background: #84a344;
+}
+
+/* Title bar */
+.reviews-title {
+    background: #6ec0b6;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+}
+
+/* Review Box */
+.review-card {
+    background: #e5e5e5;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: center;
+}
+
+/* User Image */
+.review-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Text */
+.review-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Arrows (close to card) */
+.review-arrow {
+    background: #f7f7e3;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.review-arrow span {
+    font-size: 20px;
+    color: #222;
+}
