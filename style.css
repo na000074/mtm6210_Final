@@ -1,8 +1,6 @@
-/* -------------------------
-   NAVBAR
--------------------------- */
+
 .custom-navbar {
-  background-color: #8cab4f; /* Replace with your exact green */
+  background-color: #8cab4f; 
   padding: 10px 20px;
 }
 
@@ -15,7 +13,7 @@
   margin-left: 15px;
   padding: 6px 20px;
   border: 1px solid #1a1a1a;
-  font-family: 'Playfair Display', serif; /* or your font */
+  font-family: 'Playfair Display', serif; 
   font-size: 18px;
   color: #1a1a1a;
   text-decoration: none;
@@ -26,9 +24,7 @@
   color: #fff;
 }
 
-/* -------------------------
-   HERO SECTION
--------------------------- */
+
 .hero-section {
   position: relative;
   height: 80vh;
@@ -67,15 +63,12 @@
   margin-top: 10px;
 }
 
-/* =========================
-   MENU SHOWCASE SECTION
-========================= */
 
 .menu-showcase {
     position: relative;
 }
 
-/* Background for section */
+
 .menu-bg {
     background-image: url('images/menubck.jpg');
     background-size: cover;
@@ -88,14 +81,13 @@
 }
 
 
-/* Menu cards */
 .menu-card {
     border-radius: 10px;
     padding: 30px;
     color: #1a1a1a;
 }
 
-/* Color variations */
+
 .menu-green {
     background: #c8e68a;
 }
@@ -110,7 +102,7 @@
     color: #fff;
 }
 
-/* Badge styles */
+
 .menu-badge {
     background: #f6c44b;
     display: inline-block;
@@ -131,7 +123,6 @@
     color: #fff;
 }
 
-/* Image box (wrapper) */
 .menu-img-box {
     width: 140px;
     height: 140px;
@@ -141,7 +132,7 @@
     margin: auto;
 }
 
-/* Actual image inside box */
+
 .menu-img {
     width: 100%;
     height: 100%;
@@ -149,7 +140,7 @@
     border-radius: 20px;
 }
 
-/* Menu items */
+
 .menu-item {
     font-size: 20px;
     font-weight: 600;
@@ -160,23 +151,21 @@
     color: #1ca746;
 }
 
-/* Description */
+
 .menu-desc {
     margin-top: -5px;
     margin-bottom: 15px;
     font-size: 16px;
     opacity: 0.9;
 }
-/* =========================
-   BOOKING SECTION
-========================= */
+
 
 .booking-section {
-    background: #8cab4f; /* green background */
+    background: #8cab4f;
     padding: 60px 0;
 }
 
-/* Calendar box */
+
 .calendar-box {
     background: #fff;
     border-radius: 20px;
@@ -191,7 +180,7 @@
     border-radius: 15px;
 }
 
-/* Note under calendar */
+
 .calendar-note {
     background: #c8d69b;
     margin-top: 15px;
@@ -202,7 +191,6 @@
     display: inline-block;
 }
 
-/* Booking center box */
 .booking-box {
     background: #fff;
     border-radius: 20px;
@@ -222,7 +210,7 @@
     margin-bottom: 25px;
 }
 
-/* Blue Button */
+
 .booking-btn {
     background: #008cff;
     color: white;
@@ -237,3 +225,178 @@
     color: #fff;
 }
 
+
+
+.location-section {
+    position: relative;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.location-bg {
+    background-image: url('images/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.location-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+}
+
+
+.location-title {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.location-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+.footer-section {
+    background: #4e8b32;
+    color: white;
+}
+
+.footer-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+}
+
+
+.footer-top-btn {
+    font-size: 30px;
+    color: #f3c94d;
+    transition: 0.2s ease;
+}
+
+.footer-top-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================
+   MENU PAGE HERO SECTION
+========================= */
+
+.menu-hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Background Image */
+.menu-hero-bg {
+    background-image: url('images/mheader.jpg'); /* Replace with real image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+/* Dark overlay for text visibility */
+.menu-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+/* Text styles */
+.menu-hero-title {
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.menu-hero-subtitle {
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+/* Buttons */
+.menu-hero-btn {
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+/* Button Colors */
+.gallery-btn {
+    background: rgba(255, 165, 0, 0.9); /* orange */
+}
+
+.chef-btn {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.menu-hero-btn:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   ANIMATION CLASSES
+========================= */
+
+.animate-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: slideLeft 1.2s ease forwards;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: slideRight 1.2s ease forwards;
+}
+
+.animate-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.2s ease forwards;
+}
+
+/* KEYFRAMES */
+@keyframes slideLeft {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+}
